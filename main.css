@@ -1,0 +1,212 @@
+/*GENERAL*/
+
+*{
+    font-family: "Roboto", "cursive";
+    
+}
+
+body{
+    background-color: rgb(46, 54, 74);
+}
+
+/*COMPONENTES*/
+
+.titulo{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.subtitulo{
+    font-size: larger;
+    font-weight: bold;
+    color:rgb(68, 68, 68)
+
+}
+
+.subtitulo_l{
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(70, 252, 140);
+}
+
+.card {
+    width: auto;
+    height: auto;
+    background-color: rgb(70, 252, 140);
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(68, 68, 68);
+    font-size: medium;
+    font-weight: 600;
+    
+}
+
+.boton{
+    width: auto;
+    height: auto;
+    background-color: rgb(70, 252, 140);
+    color: rgb(68, 68, 68);
+    border-radius: 50px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-top: 28vh;
+}
+
+.barra{
+    width: 100vh;
+    height: auto;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgb(70, 252, 140);
+    color: rgb(68, 68, 68);
+    font-size: medium;
+    font-weight: bold;
+    position: fixed;
+    text-align: center;
+}
+
+.barra .col-4{
+    padding: 1px;
+    color: rgb(68, 68, 68);
+}
+
+
+.barra img{
+    width: auto;
+}
+
+.fake_img_metrics_low{
+    width: 1.5ch; /*Ancho*/
+    height: 4ch; /*Altura*/
+    background-color: rgb(68, 68, 68);
+    border-radius: 20px;
+}
+
+.fake_img_metrics_medium{
+    width: 1.5ch; /*Ancho*/
+    height: 8ch; /*Altura*/
+    background-color: rgb(68, 68, 68);
+    border-radius: 20px;
+    bottom: 0px;
+}
+
+
+.fake_img_metrics_high{
+    width: 1.5ch; /*Ancho*/
+    height: 12ch; /*Altura*/
+    background-color: rgb(68, 68, 68);
+    border-radius: 20px;
+}
+
+.adjust_low{
+    height: 8vh;
+}
+
+.adjust_medium{
+    height: 4vh;
+}
+
+.adjust_high{
+    height: 0.1vh;
+}
+
+.adjust_points{
+    color: rgb(70, 252, 140);
+}
+
+.edit{
+    margin: 15px;
+    text-align: center;
+    color: #ffffff;
+    font-size: large;
+    text-align: center;
+}
+
+.video{
+    width: auto;
+    height: 20vh;
+    background-color: #ffffff;
+    border-radius: 20px;
+    color: rgb(70, 252, 140);
+}
+
+.adjust_video{
+    height: 7vh;
+}
+
+.number{
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(70, 252, 140);
+}
+
+.text{
+    font-size: larger;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.boton_accion{
+    width: 64px;
+    height: 64px;
+    bottom: 150px;
+    left: 75%;
+    background-color: rgb(70, 252, 140);
+    position: fixed;
+    border-radius: 100%;
+    text-align: center;
+}
+
+
+.timer{
+    font-size: xxx-large;
+    color: #ffffff;
+    text-align: center;
+}
+
+.day{
+    color: rgb(68, 68, 68);
+    font-weight: 500;
+    font-size: large;
+}
+
+.contenedor-gif {
+    width: 100%; /* Un contenedor de ejemplo para demostrar la responsividad */
+    max-width: 600px;
+}
+
+.gif-responsivo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*GRIDS*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px; /* Espacio entre columnas */
+    width: 100%;
+    padding: 5px;
+}
+
+/* Clases de columnas reutilizables */
+[class^="col-"] {
+    padding: 10px;
+}
+
+/* Tamaños de columna */
+.col-1 { grid-column: span 1; }
+.col-2 { grid-column: span 2; }
+.col-3 { grid-column: span 3; }
+.col-4 { grid-column: span 4; }
+.col-5 { grid-column: span 5; }
+.col-6 { grid-column: span 6; }
+.col-7 { grid-column: span 7; }
+.col-8 { grid-column: span 8; }
+.col-9 { grid-column: span 9; }
+.col-10 { grid-column: span 10; }
+.col-11 { grid-column: span 11; }
+.col-12 { grid-column: span 12; }

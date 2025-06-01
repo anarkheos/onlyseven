@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+        
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="col-12"></div>
+    </div>
+
+    <!-- Saludo-->
+    <div class="grid-container">
+        <div class="col-1"></div>
+        <div class="col-10 titulo">
+            Buenos Dias
+        </div>
+        <div class="col-1"></div>
+    </div>
+
+    <!-- Cards - Carrusel-->
+    <div class="grid-container">
+        <div class="col-1"></div>
+        <div class="col-10 card">
+            <div class="grid-container">
+                <div class="col-12">
+                    <!-- Descriptor-->
+                    <div class="grid-container subtitulo">
+                        Promedio
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="col-10">
+                    <!-- Metricas Grafico Fake-->
+                    <div class="grid-container">
+                        <div></div>
+                        <div>
+                            <div class="adjust_hihg"></div>
+                            <div class="fake_img_metrics_high"></div>
+                            <p>L</p>
+                        </div>
+                        <div></div>
+                        <div>
+                            <div class="adjust_medium"></div>
+                            <div class="fake_img_metrics_medium"></div>
+                            <p>M</p>
+                        </div>
+                        <div></div>
+                        <div>
+                            <div class="adjust_low"></div>
+                            <div class="fake_img_metrics_low"></div>
+                            <p>X</p>
+                        </div>
+                        <div></div>
+                        <div>
+                            <div class="adjust_medium"></div>
+                            <div class="fake_img_metrics_medium"></div>
+                            <p>J</p>
+                        </div>
+                        <div></div>
+                        <div>
+                            <div class="adjust_low"></div>
+                            <div class="fake_img_metrics_low"></div>
+                            <p>V</p>
+                        </div>
+                        <div></div>
+                        <div>
+                            <div class="adjust_low"></div>
+                            <div class="fake_img_metrics_low"></div>
+                            <p>S</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+    
+    <a href="rutina.html" style="text-decoration: none; color: rgb(69, 69, 69);" id="myLink"> 
+        <div class="grid-container">
+            <div class="col-3"></div>
+            <div class="col-6 boton" id="quickStartButton"> 
+                Quick Start
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </a>
+
+    <audio id="soundEffect" src="sonidos/click_normal.wav" preload="auto"></audio>
+
+    <script>
+        // Obtener el elemento del botón por su ID
+        const button = document.getElementById('quickStartButton');
+
+        // Obtener el elemento de audio por su ID
+        const sound = document.getElementById('soundEffect');
+
+        // Obtener el elemento del enlace (<a>) padre
+        // Añadí un id="myLink" al <a> para mayor claridad, pero button.parentElement también funciona si es el <a> directo.
+        const linkElement = document.getElementById('myLink'); 
+        
+        // Guardar la URL de destino del enlace
+        const targetUrl = linkElement.href; // O const targetUrl = button.parentElement.href; si no quieres añadir un ID al <a>
+
+        // Añadir un "event listener" para el clic en el botón
+        button.addEventListener('click', function(event) {
+            // Prevenir la navegación inmediata del enlace <a>
+            event.preventDefault(); 
+
+            // Reproducir el sonido
+            sound.play();
+
+            // Añadir un "event listener" al audio para cuando termine de reproducirse
+            sound.onended = function() {
+                // Cuando el sonido termine, navegar a la URL que guardamos
+                window.location.href = targetUrl;
+            };
+            
+            // Manejar el caso de que el sonido sea muy corto o no se pueda reproducir (opcional pero recomendado)
+            // Esto previene que el usuario se quede "colgado" si el sonido falla
+            // Puedes poner un temporizador corto (ej. 500ms) para navegar si el onended no se dispara.
+            // O un pequeño retardo si el sonido es casi instantáneo.
+            setTimeout(() => {
+                if (!sound.ended) { // Si el sonido no ha terminado por alguna razón
+                    window.location.href = targetUrl;
+                }
+            }, 1500); // Intenta navegar después de 1.5 segundos si el onended no se ha disparado. Ajusta según la duración de tu sonido.
+        });
+    </script>
+
+    <!-- Editar Rutina-->
+    <a href="rutinas.html" style="text-decoration: none; color: rgb(69, 69, 69);">
+        <div class="edit"><u>Editar Rutina</u></div>
+    </a>
+
+    <!-- Barra Rapida-->
+    <div class="grid-container barra">
+        
+        <div class="col-4">
+            <a href="metricas.html" style="text-decoration: none; color: rgb(69, 69, 69);">
+                <div class="adjust_points">.</div>
+                <div><i class="fa fa fa-signal fa-2x"></i></div>
+                <p>Metricas</p>
+            </a>
+        </div>
+        <div class="col-4">
+
+            <div class="adjust_points">.</div>
+            <div><i class="fa fa-home fa-2x"></i></div>
+            <p>Home</p>
+
+        </div>
+        <div class="col-4">
+            <a href="rutinas.html" style="text-decoration: none; color: rgb(69, 69, 69);">
+                <div class="adjust_points">.</div>
+                <div><i class="fa fa-calendar-o fa-2x"></i></div>
+                <p>Rutinas</p>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
+

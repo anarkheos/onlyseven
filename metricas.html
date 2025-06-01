@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+        
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="col-12"></div>
+    </div>
+
+    <!-- Saludo-->
+    <div class="grid-container">
+        <div class="col-1"></div>
+        <div class="col-10 titulo">
+            Metricas
+        </div>
+        <div class="col-1"></div>
+    </div>
+
+    <!-- Grafico 1-->
+    <!-- Cards - Carrusel-->
+    <div class="grid-container">
+        <div class="col-1"></div>
+        <div class="col-10 card">
+            <div class="grid-container">
+                <div class="col-12">
+                    <!-- Descriptor-->
+                    <div class="grid-container subtitulo">
+                        Promedio
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="col-10">
+                    <!-- Metricas Grafico Fake-->
+                    <div class="grid-container">
+                        <div></div>
+                        <div>
+                            <div class="adjust_hihg"></div>
+                            <div class="fake_img_metrics_high"></div>
+                            <p>L</p>
+                        </div>
+                        <div></div>
+                        <div>
+                            <div class="adjust_medium"></div>
+                            <div class="fake_img_metrics_medium"></div>
+                            <p>M</p>
+                        </div>
+                        <div></div>
+                        <div>
+                            <div class="adjust_low"></div>
+                            <div class="fake_img_metrics_low"></div>
+                            <p>X</p>
+                        </div>
+                        <div></div>
+                        <div>
+                            <div class="adjust_medium"></div>
+                            <div class="fake_img_metrics_medium"></div>
+                            <p>J</p>
+                        </div>
+                        <div></div>
+                        <div>
+                            <div class="adjust_low"></div>
+                            <div class="fake_img_metrics_low"></div>
+                            <p>V</p>
+                        </div>
+                        <div></div>
+                        <div>
+                            <div class="adjust_low"></div>
+                            <div class="fake_img_metrics_low"></div>
+                            <p>S</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+
+    <!-- Grafico 2-->
+    <!-- Cards - Carrusel-->
+    <div class="grid-container">
+        <div class="col-1"></div>
+        <div class="col-10 card">
+            <div class="grid-container">
+                <div class="col-12">
+                    <!-- Descriptor-->
+                    <div class="grid-container subtitulo">
+                        Avance
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+
+                <div class="col-12">
+                    <div class="fake_line_chart" style="position: relative; height: 120px;">
+                        <div class="line_point" style="left: 10%; bottom: 25%;"></div>
+                        <div class="line_point" style="left: 25%; bottom: 60%;"></div>
+                        <div class="line_point" style="left: 40%; bottom: 35%;"></div>
+                        <div class="line_point" style="left: 55%; bottom: 45%;"></div>
+                        <div class="line_point" style="left: 70%; bottom: 90%;"></div>
+                        <div class="line_point" style="left: 85%; bottom: 55%;"></div>
+                        <!-- Línea falsa entre puntos (opcional, puede omitirse para simplicidad) -->
+                        <svg style="position:absolute; top:0; left:0; width:100%; height:100%;">
+                            <polyline points="20,96 80,35 120,78 170,65 220,12 260,54"
+                                style="fill:none;stroke:rgb(69, 69, 69);stroke-width:5;" />
+                        </svg>
+                    </div>
+                    <div class="grid-container">
+                            <div class="col-2">L</div>
+                            <div class="col-2">M</div>
+                            <div class="col-2">X</div>
+                            <div class="col-2">J</div>
+                            <div class="col-2">V</div>
+                            <div class="col-2">S</div>
+                    </div>  
+                </div>
+            </div> 
+        </div>
+        <div class="col-1"></div>
+    </div>
+        
+
+    <!-- Grafico 3-->
+    <!-- Cards - Carrusel-->
+    <div class="grid-container">
+        <div class="col-1"></div>
+        <div class="col-10 card">
+            <div class="grid-container">
+                <div class="col-12">
+                    <!-- Descriptor-->
+                    <div class="grid-container subtitulo">
+                        Calendario
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <!-- Tarjeta: Calendario -->
+<div class="grid-container">
+    <div class="col-1"></div>
+    <div class="col-10 card">
+
+        <!-- Cabecera del calendario -->
+        <div class="grid-container calendar-header">
+            <div class="col-2">L</div>
+            <div class="col-2">M</div>
+            <div class="col-2">X</div>
+            <div class="col-2">J</div>
+            <div class="col-2">V</div>
+            <div class="col-2">S</div>
+        </div>
+
+        <!-- Días del mes (simulado, por ejemplo mayo 2025) -->
+        <div class="grid-container calendar-days">
+            <div class="col-2"></div> <!-- espacio para que empiece en jueves -->
+            <div class="col-2 day">1</div>
+            <div class="col-2 day" style="background-color: #fff; border-radius: 20px; text-align: center;">2</div>
+            <div class="col-2 day">3</div>
+            <div class="col-2 day">4</div>
+            <div class="col-2 day">5</div>
+
+            <div class="col-2 day">6</div>
+            <div class="col-2 day">7</div>
+            <div class="col-2 day">8</div>
+            <div class="col-2 day">9</div>
+            <div class="col-2 day">10</div>
+            <div class="col-2 day">11</div>
+
+            <div class="col-2 day">12</div>
+            <div class="col-2 day">13</div>
+            <div class="col-2 day">14</div>
+            <div class="col-2 day">15</div>
+            <div class="col-2 day">16</div>
+            <div class="col-2 day">17</div>
+
+            <div class="col-2 day">18</div>
+            <div class="col-2 day">19</div>
+            <div class="col-2 day">20</div>
+            <div class="col-2 day">21</div>
+            <div class="col-2 day">22</div>
+            <div class="col-2 day">23</div>
+
+            <div class="col-2 day">24</div>
+            <div class="col-2 day">25</div>
+            <div class="col-2 day">26</div>
+            <div class="col-2 day">27</div>
+            <div class="col-2 day">28</div>
+            <div class="col-2 day">29</div>
+
+            <div class="col-2 day">30</div>
+            <div class="col-2 day">31</div>
+        </div>
+    </div>
+    <div class="col-1"></div>
+</div>
+
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+
+    <!-- Espacios-->
+    <div>
+        <div class="grid-container"></div>
+        <div class="grid-container"></div>
+        <div class="grid-container"></div>
+        <div class="grid-container"></div>
+        <div class="grid-container"></div>
+        <div class="grid-container"></div>
+        <div class="grid-container"></div>
+        <div class="grid-container"></div>
+        <div class="grid-container"></div>
+        <div class="grid-container"></div>
+        <div class="grid-container"></div>
+        <div class="grid-container"></div>
+    </div>
+
+    <!-- Barra Rapida-->
+    <div class="grid-container barra">
+        
+        <div class="col-4">
+
+            <div class="adjust_points">.</div>
+            <div><i class="fa fa fa-signal fa-2x"></i></div>
+            <p>Metricas</p>
+
+        </div>
+        <div class="col-4">
+            <a href="home.html" style="text-decoration: none; color: rgb(69, 69, 69);">
+                <div class="adjust_points">.</div>
+                <div><i class="fa fa-home fa-2x"></i></div>
+                <p>Home</p>
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="rutinas.html" style="text-decoration: none; color: rgb(69, 69, 69);">
+                <div class="adjust_points">.</div>
+                <div><i class="fa fa-calendar-o fa-2x"></i></div>
+                <p>Rutinas</p>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
